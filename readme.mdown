@@ -1,0 +1,36 @@
+Upload Image Preview
+----
+
+This jQuery plug-in uses the File API to show you a preview of your chosen image prior to uploading files via form file input boxes.
+
+You can apply it to a single file input, or to all file inputs in a form.
+
+When the user selects a file to upload, if that file is an image, then a thumbnail preview will be shown. If the file is not an image, an error message will be displayed.
+
+The script also checks for errors on form submit and warns the user accordingly.
+
+The plug-in generates a lot of CSS for you, so some assumptions are made about how the thumbnail image should be displayed. However, basic options like colors, borders, and shadows are comfigurable.
+
+####Usage
+
+Basic Configuration:
+
+    $('.image-upload').imgPreview();
+
+Advanced configuration:
+
+    // You may pass any or all of the below options
+    $('.image-upload').imgPreview({
+        thumbnail_size:60,
+        thumbnail_bg_color:"#ddd",
+        thumbnail_border:"5px solid #fff",
+        thumbnail_shadow:"0 0 4px rgba(0, 0, 0, 0.5)",
+        label_text:"Select an Image File",
+        warning_message:"Not an image file.",
+        warning_text_color:"#f00"
+    });
+
+####License
+
+Everything here is 100% free - feel free to do anything you'd like with it. A mention in a blog post or a link to [kellishaver.com](http://kellishaver.com) would be appreciated, but is not required. :)
+
